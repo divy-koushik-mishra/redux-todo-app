@@ -20,7 +20,7 @@ const AddTodo = () => {
           type="text"
           name=""
           id=""
-          className="rounded-l p-5 md:w-1/2 bg-slate-700 outline-none"
+          className="rounded-t md:rounded-l p-5 md:w-1/2 bg-slate-700 outline-none"
           placeholder="Enter todo item"
           value={input}
           onChange={(e) => setinput(e.target.value)}
@@ -28,7 +28,7 @@ const AddTodo = () => {
         <input
           type="submit"
           value="Add Todo"
-          className="bg-slate-800 rounded-r cursor-pointer hover:bg-slate-900 p-4"
+          className="bg-slate-800 rounded-b md:rounded-r cursor-pointer hover:bg-slate-900 p-4"
         />
       </form>
     </>
