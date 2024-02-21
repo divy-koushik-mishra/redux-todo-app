@@ -7,7 +7,10 @@ const AddTodo = () => {
   const dispatch = useDispatch();
   const addTodoHandler = (e) => {
     e.preventDefault();
-    dispatch(addTodo(input));
+    if (input.trim() !== "") {
+      dispatch(addTodo(input));
+    }
+
     setinput("");
   };
   return (
