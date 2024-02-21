@@ -12,7 +12,7 @@ const Todos = () => {
           {todos.map((todo) => (
             <div
               key={todo.id}
-              className="todocardw-full md:w-3/4 border-y gap-3 border-gray-500 p-8 text-xl flex flex-col md:flex-row justify-between items-center"
+              className="todocard w-full md:w-3/4 border-y gap-3 border-gray-500 p-8 text-xl flex flex-col md:flex-row justify-between items-center"
             >
               <h3>{todo.text}</h3>
               <button
